@@ -1,0 +1,230 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Incident management process enriched event log Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif"
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.php"><font size="3" color="#FFDD33"><b>View
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Incident management process enriched event log Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/00498/"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="#"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: This event log was extracted from data gathered from the audit system of an instance of the ServiceNow platform used by an IT company and enriched with data loaded from a relational database.</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate, Sequential</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">141712</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Business</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">36</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2019-07-14</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Regression, Clustering</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">Yes</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">14102</p></td>
+	</tr>
+	<!--
+	<tr>
+
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Claudio Aparecido Lira do Amaral, <u>claudio.amaral <b>'@'</b> usp.br</u>, University of SÃ£o Paulo, Brazil<br>Marcelo Fantinato, <u>m.fantinato <b>'@'</b> usp.br</u>, University of SÃ£o Paulo, Brazil<br>Sarajane Marques Peres, <u>sarajane <b>'@'</b> usp.br</u>, University of SÃ£o Paulo, Brazil</p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This is an event log of an incident management process extracted from data gathered from the audit system of an instance of the ServiceNowTM platform used by an IT company. The event log is enriched with data loaded from a relational database underlying a corresponding process-aware information system. Information was anonymized for privacy.<br><br>Number of instances: 141,712 events (24,918 incidents)<br>Number of attributes: 36 attributes (1 case identifier, 1 state identifier, 32 descriptive attributes, 2 dependent variables)<br><br>The attributed â€˜closed_atâ€™ is used to determine the dependent variable for the time completion prediction task. The attribute â€˜resolved_atâ€™ is highly correlated with â€˜closed_atâ€™. In this event log, some rows may have the same values (they are equal) since not all attributes involved in the real-world process are present in the log.<br><br>Attributes used to record textual information are not placed in this log.<br><br>The missing values should be considered â€˜unknown informationâ€™.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">1. number: incident identifier (24,918 different values);<br>2. incident state: eight levels controlling the incident management process transitions from opening until closing the case;<br>3. active: boolean attribute that shows whether the record is active or closed/canceled;<br>4. reassignment_count: number of times the incident has the group or the support analysts changed;<br>5. reopen_count: number of times the incident resolution was rejected by the caller;<br>6. sys_mod_count: number of incident updates until that moment;<br>7. made_sla: boolean attribute that shows whether the incident exceeded the target SLA;<br>8. caller_id: identifier of the user affected;<br>9. opened_by: identifier of the user who reported the incident;<br>10. opened_at: incident user opening date and time;<br>11. sys_created_by: identifier of the user who registered the incident;<br>12. sys_created_at: incident system creation date and time;<br>13. sys_updated_by: identifier of the user who updated the incident and generated the current log record;<br>14. sys_updated_at: incident system update date and time;<br>15. contact_type: categorical attribute that shows by what means the incident was reported;<br>16. location: identifier of the location of the place affected;<br>17. category: first-level description of the affected service;<br>18. subcategory: second-level description of the affected service (related to the first level description, i.e., to category);<br>19. u_symptom: description of the user perception about service availability;<br>20. cmdb_ci: (confirmation item) identifier used to report the affected item (not mandatory);<br>21. impact: description of the impact caused by the incident (values: 1â€“High; 2â€“Medium; 3â€“Low);<br>22. urgency: description of the urgency informed by the user for the incident resolution (values: 1â€“High; 2â€“Medium; 3â€“Low);<br>23. priority: calculated by the system based on 'impact' and 'urgency';<br>24. assignment_group: identifier of the support group in charge of the incident;<br>25. assigned_to: identifier of the user in charge of the incident;<br>26. knowledge: boolean attribute that shows whether a knowledge base document was used to resolve the incident;<br>27. u_priority_confirmation: boolean attribute that shows whether the priority field has been double-checked;<br>28. notify: categorical attribute that shows whether notifications were generated for the incident;<br>29. problem_id: identifier of the problem associated with the incident;<br>30. rfc: (request for change) identifier of the change request associated with the incident;<br>31. vendor: identifier of the vendor in charge of the incident;<br>32. caused_by: identifier of the RFC responsible by the incident;<br>33. close_code: identifier of the resolution of the incident;<br>34. resolved_by: identifier of the user who resolved the incident;<br>35. resolved_at: incident user resolution date and time (dependent variable);<br>36. closed_at: incident user close date and time (dependent variable).</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Amaral, C. A. L., Fantinato, M., Reijers, H. A., Peres, S. M., Enhancing Completion Time Prediction Through Attribute Selection. Proceedings of the 15th International Conference on Advanced Information Technologies for Management (AITM 2018) and 13th International Conference on Information Systems Management (ISM 2018), Revised Selected Papers â€“ Lecture Notes in Business Information Processing, v. 346, pp. 3-23, 2019. <a href="https://doi.org/10.1007/978-3-030-15154-6_1">[Web Link]</a><br><br>Amaral, C. A. L., Fantinato, M., Peres, S. M., Attribute Selection with Filter and Wrapper: An Application on Incident Management Process. Proceedings of the 14th Federated Conference on Computer Science and Information Systems (FedCSIS 2018), pp. 679-682, 2018. <a href="http://dx.doi.org/10.15439/2018F126">[Web Link]</a><br><br>Maita, A. R. C., Martins, L. C., Paz, C. R. L., Rafferty, L., Hung, P., Peres, S. M., Fantinato, M. A systematic mapping study of process mining. Enterprise Information Systems, v. 12, n. 5, pp. 505-549, 2018. <a href="https://doi.org/10.1080/17517575.2017.1402371">[Web Link]</a></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please cite this paper if you use this dataset: Amaral, C. A. L., Fantinato, M., Reijers, H. A., Peres, S. M., Enhancing Completion Time Prediction Through Attribute Selection. Proceedings of the 15th International Conference on Advanced Information Technologies for Management (AITM 2018) and 13th International Conference on Information Systems Management (ISM 2018), Revised Selected Papers â€“ Lecture Notes in Business Information Processing, v. 346, pp. 3-23, 2019. <a href="https://doi.org/10.1007/978-3-030-15154-6_1">[Web Link]</a><br><br>Moreover, refer to the Machine Learning Repository's citation policy.</p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>
